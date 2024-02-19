@@ -1,4 +1,8 @@
 ---
+import Divisor from "../components/Divisor.astro";
+import Navbar from "../components/Navbar.astro";
+import Rodape from "../components/Rodape.astro";
+
 interface Props {
   title: string;
 }
@@ -17,7 +21,11 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Navbar />
+    <Divisor />
     <slot />
+    <Divisor />
+    <Rodape />
   </body>
 </html>
 <style is:global>
