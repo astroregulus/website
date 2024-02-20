@@ -1,18 +1,19 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Link from "./Link.astro";
 ---
 
 <header class="lg:flex p-5 gap-5 text-white">
   <Astronav>
     <div class="flex w-full justify-between">
-      <a class="text-3xl uppercase cursor-pointer" href="./">Regulus</a>
+      <Link class="text-3xl uppercase cursor-pointer" href="/">Regulus</Link>
       <div class="block lg:hidden">
         <MenuIcon class="w-4 h-4 text-white" />
       </div>
     </div>
     <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
       <ul class="flex flex-col lg:flex-row lg:gap-5">
-        <li><a href="./turmas">Cursos</a></li>
+        <li><Link href="/turmas">Cursos</Link></li>
         <li>Livraria</li>
         <li>Formação</li>
         <li>Sobre</li>
