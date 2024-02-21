@@ -24,7 +24,9 @@ const { title } = Astro.props;
   <body>
     <Navbar />
     <Divisor />
-    <slot />
+    <main class="max-w-screen-md mx-auto my-4">
+      <slot />
+    </main>
     <Divisor />
     <Rodape />
   </body>

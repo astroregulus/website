@@ -1,13 +1,46 @@
 ---
+import Turma from "../components/Turma.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Regulus | Escola de Astrologia">
-  <h1>Turmas</h1>
+  <h1 class="text-white text-3xl font-extrabold">Programação de Cursos</h1>
+  <div class="space-y-4">
+    <Turma
+      curso="Interpretação: Ferramentas tradicionais"
+      professor="Profª Josana Camilo"
+    >
+      <p>
+        Uso de ferramentas antigas da Astrologia em interpretação de mapas e de
+        previsões<br /> - o papel das partes árabes na interpretação <br /> - termos
+        planetários e decanatos acrescentando mais objetividade nas leituras <br
+        />- as triplicidades mostrando, de acordo com as fases da vida, o
+        desdobramento das promessas do mapa natal <br />- a interpretação do
+        mapa solar (mesmo para quem não tem horário de nascimento)
+      </p>
+      <Fragment slot="duracao">
+        1 mês - 4 aulas - 1 aula por semana de 2 horas
+      </Fragment>
+      <Fragment slot="inicio">dia 08/02 (quintas) das 15h00 às 17h00</Fragment>
+      <Fragment slot="valor">R$ 341,00</Fragment>
+    </Turma>
+    <Turma
+      curso="Interpretação: Ferramentas tradicionais"
+      professor="Profª Josana Camilo"
+    >
+      <p>
+        Uso de ferramentas antigas da Astrologia em interpretação de mapas e de
+        previsões<br /> - o papel das partes árabes na interpretação <br /> - termos
+        planetários e decanatos acrescentando mais objetividade nas leituras <br
+        />- as triplicidades mostrando, de acordo com as fases da vida, o
+        desdobramento das promessas do mapa natal <br />- a interpretação do
+        mapa solar (mesmo para quem não tem horário de nascimento)
+      </p>
+      <Fragment slot="duracao">
+        1 mês - 4 aulas - 1 aula por semana de 2 horas
+      </Fragment>
+      <Fragment slot="inicio">dia 08/02 (quintas) das 15h00 às 17h00</Fragment>
+      <Fragment slot="valor">R$ 341,00</Fragment>
+    </Turma>
+  </div>
 </Layout>
-
-<style>
-  h1 {
-    color: white;
-  }
-</style>
