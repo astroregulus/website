@@ -1,4 +1,6 @@
 ---
+import Link from "./Link.astro";
+
 interface Props {
   title: string;
   body: string;
@@ -9,7 +11,7 @@ const { href, title, body } = Astro.props;
 ---
 
 <li class="link-card">
-  <a href={href}>
+  <Link href={href}>
     <h2>
       {title}
       <span>&rarr;</span>
@@ -17,7 +19,7 @@ const { href, title, body } = Astro.props;
     <p>
       {body}
     </p>
-  </a>
+  </Link>
 </li>
 <style>
   .link-card {

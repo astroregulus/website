@@ -21,7 +21,9 @@ import Link from "../components/Link.astro";
       <button class="w-full md:w-max primary">
         <Link href="/turmas">Veja as turmas</Link></button
       >
-      <button class="w-full md:w-max primary"><a>Grade curricular</a></button>
+      <button class="w-full md:w-max primary"
+        ><Link href="/formacao">Grade curricular</Link></button
+      >
     </div>
     <ul role="list" class="link-card-grid">
       <Card
@@ -30,12 +32,12 @@ import Link from "../components/Link.astro";
         body="Um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros."
       />
       <Card
-        href="https://www.regulus.com.br/curso/formacao.htm"
+        href="/formacao"
         title="Formação"
         body="Nossa grade curricular atende a CBO (Classificação Brasileira de Ocupações) e os currículos de referência de entidades nacionais e internacionais."
       />
       <Card
-        href="./turmas"
+        href="/turmas"
         title="Se inscreva"
         body="Veja nossas turmas abertas"
       />
