@@ -2,6 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Link from "../components/Link.astro";
+import oficinaDaAlma from "../../public/oficina_da_alma.jpg";
+import cna from "../../public/cna.png";
+import astroBrasil from "../../public/logo_astrobrasil.png";
+import Parceiro from "../components/Parceiro.astro";
 ---
 
 <Layout title="Regulus | Escola de Astrologia">
@@ -43,10 +47,36 @@ import Link from "../components/Link.astro";
       />
       <Card
         href="https://www.youtube.com/user/astrologiaregulus"
-        title="Encontro Regulus de Astrologia"
+        title="Encontro Regulus dse Astrologia"
         body="Acesse nosso canal no YouTube e tenha acesso a vários conteúdos gratuitos"
       />
     </ul>
+    <div>
+      <p class="my-8">A escola Regulus é parceira e apoia:</p>
+      <div
+        class="flex flex-wrap items-center justify-center gap-12 px-8 sm:gap-16"
+      >
+        <Parceiro
+          href="https://oficinadaalma.com.br"
+          src={oficinaDaAlma}
+          alt="Parceiros: Oficina da Alma"
+          texto="Oficinal da Alma"
+        />
+        <div class="bg-white">
+          <Parceiro
+            href="https://www.astrobrasil.com.br/"
+            src={astroBrasil}
+            alt="Parceiros: AstroBrasil"
+          />
+        </div>
+        <Parceiro
+          href="https://cnastrologia.org.br/"
+          src={cna}
+          alt="Parceiros: CNA Central Nacional de Astrologia - filie-se"
+          texto="CNA"
+        />
+      </div>
+    </div>
   </main>
 </Layout>
 
