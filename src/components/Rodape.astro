@@ -1,5 +1,5 @@
 ---
-import Divisor from "./Divisor.astro";
+import Link from "./Link.astro";
 ---
 
 <footer class="bg-blue-regulus text-blue-100 max-w-full px-4 py-10">
@@ -52,8 +52,8 @@ import Divisor from "./Divisor.astro";
       <div class="grid grid-cols-2">
         <div>
           <ul>
-            <li>Cursos</li>
-            <li>Formação</li>
+            <li><Link href="/turmas">Cursos</Link></li>
+            <li><Link href="/formacao">Formação</Link></li>
             <li>Sobre</li>
             <li>Contato</li>
           </ul>
@@ -63,20 +63,18 @@ import Divisor from "./Divisor.astro";
             <li>Software</li>
             <li>Professores</li>
             <li>Serviços</li>
-            <li>Acesso aluno</li>
+            <li>
+              <Link
+                href="https://www.regulus.com.br/moodle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Acesso aluno
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </footer>
-<style>
-  .divisor {
-    max-width: 300px;
-    height: 2px;
-    background-color: rgb(var(--accent));
-    margin: auto;
-    margin-bottom: auto;
-    margin-bottom: 24px;
-  }
-</style>
