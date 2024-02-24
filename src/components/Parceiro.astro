@@ -5,7 +5,12 @@ import { Image } from "astro:assets";
 const { src, href, alt, texto } = Astro.props;
 ---
 
-<Link href={href} class="flex items-center text-gray-400 hover:text-gray-400">
-  <Image src={src} height={40} alt={alt} />
+<Link
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class={`flex items-center text-gray-400 hover:text-gray-400 ${Astro.props.class}`}
+>
+  <Image src={src} height={48} alt={alt} />
   <p>{texto}</p>
 </Link>

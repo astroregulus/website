@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Link from "../components/Link.astro";
-import oficinaDaAlma from "../../public/oficina_da_alma.jpg";
 import cna from "../../public/cna.png";
-import astroBrasil from "../../public/logo_astrobrasil.png";
+import sinarj from "../../public/sinarj.png";
+import opa from "../../public/opa.png";
+import isar from "../../public/isar.png";
 import Parceiro from "../components/Parceiro.astro";
 ---
 
@@ -57,23 +58,25 @@ import Parceiro from "../components/Parceiro.astro";
         class="flex flex-wrap items-center justify-center gap-12 px-8 sm:gap-16"
       >
         <Parceiro
-          href="https://oficinadaalma.com.br"
-          src={oficinaDaAlma}
-          alt="Parceiros: Oficina da Alma"
-          texto="Oficinal da Alma"
-        />
-        <div class="bg-white">
-          <Parceiro
-            href="https://www.astrobrasil.com.br/"
-            src={astroBrasil}
-            alt="Parceiros: AstroBrasil"
-          />
-        </div>
-        <Parceiro
           href="https://cnastrologia.org.br/"
           src={cna}
           alt="Parceiros: CNA Central Nacional de Astrologia - filie-se"
-          texto="CNA"
+        />
+        <Parceiro
+          href="https://www.sinarj.org.br/"
+          src={sinarj}
+          alt="Parceiros: SINARJ Sindicato dos Astrólogos do Rio de Janeiro - filie-se"
+        />
+        <Parceiro
+          href="https://www.opaastrology.org"
+          src={opa}
+          alt="Parceiros: OPA"
+        />
+        <Parceiro
+          class="bg-white"
+          href="https://isarastrology.com/"
+          src={isar}
+          alt="Parceiros: ISAR"
         />
       </div>
     </div>
