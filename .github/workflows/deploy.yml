@@ -26,5 +26,4 @@ jobs:
         server: ftp.regulus.com.br
         username: afucher@regulus.com.br
         password: ${{ secrets.ftp_password }}
-        dry-run: true
         local-dir: ./dist/
