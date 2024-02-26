@@ -1,0 +1,30 @@
+name: 🚀 Deploy website on push
+on:
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js 21
+      uses: actions/setup-node@v2
+      with:
+        node-version: '21'
+      
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build 
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.regulus.com.br
+        username: afucher
+        password: ${{ secrets.ftp_password }}
+        dry-run: true
+        local-dir: ./dist/
