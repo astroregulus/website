@@ -24,7 +24,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.regulus.com.br
-        username: afucher
+        username: afucher@regulus.com.br
         password: ${{ secrets.ftp_password }}
         dry-run: true
         local-dir: ./dist/
