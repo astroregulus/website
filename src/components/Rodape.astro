@@ -3,13 +3,13 @@ import Link from "./Link.astro";
 ---
 
 <footer
-  class="bg-blue-regulus text-blue-100 max-w-full px-4 py-10 max-w-screen-xl mx-auto px-5"
+  class="bg-blue-regulus text-blue-100 py-10 max-w-screen-xl mx-auto px-5"
 >
-  <div class="s:mx-36">
+  <div class="">
     <div
       class="grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 justify-items-center"
     >
-      <div>
+      <div class="sm:justify-self-start">
         <p>Rua Estela, 515 - Bl.E - Cj.71</p>
         <p>São Paulo - SP - Brasil</p>
         <p><a href="tel:+551155492655">+55 (11) 5549-2655</a> após as 14h</p>
@@ -19,7 +19,7 @@ import Link from "./Link.astro";
           >
         </p>
       </div>
-      <div>
+      <div class="sm:justify-self-center">
         <ul>
           <li>
             <a
@@ -51,7 +51,7 @@ import Link from "./Link.astro";
           </li>
         </ul>
       </div>
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-2 sm:justify-self-end">
         <div>
           <ul>
             <li><Link href="/formacao">Formação</Link></li>

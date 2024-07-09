@@ -4,43 +4,69 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Regulus | Escola de Astrologia">
-  <h1 class="text-white text-3xl font-extrabold">Programação de Cursos</h1>
-  <div class="space-y-4 mt-4">
-    <Turma
-      curso="Interpretação: Ferramentas tradicionais"
-      professor="Profª Josana Camilo"
-    >
-      <p>
-        Uso de ferramentas antigas da Astrologia em interpretação de mapas e de
-        previsões<br /> - o papel das partes árabes na interpretação <br /> - termos
-        planetários e decanatos acrescentando mais objetividade nas leituras <br
-        />- as triplicidades mostrando, de acordo com as fases da vida, o
-        desdobramento das promessas do mapa natal <br />- a interpretação do
-        mapa solar (mesmo para quem não tem horário de nascimento)
-      </p>
-      <Fragment slot="duracao">
-        1 mês - 4 aulas - 1 aula por semana de 2 horas
-      </Fragment>
-      <Fragment slot="inicio">dia 08/02 (quintas) das 15h00 às 17h00</Fragment>
-      <Fragment slot="valor">R$ 341,00</Fragment>
-    </Turma>
-    <Turma
-      curso="Interpretação: Ferramentas tradicionais"
-      professor="Profª Josana Camilo"
-    >
-      <p>
-        Uso de ferramentas antigas da Astrologia em interpretação de mapas e de
-        previsões<br /> - o papel das partes árabes na interpretação <br /> - termos
-        planetários e decanatos acrescentando mais objetividade nas leituras <br
-        />- as triplicidades mostrando, de acordo com as fases da vida, o
-        desdobramento das promessas do mapa natal <br />- a interpretação do
-        mapa solar (mesmo para quem não tem horário de nascimento)
-      </p>
-      <Fragment slot="duracao">
-        1 mês - 4 aulas - 1 aula por semana de 2 horas
-      </Fragment>
-      <Fragment slot="inicio">dia 08/02 (quintas) das 15h00 às 17h00</Fragment>
-      <Fragment slot="valor">R$ 341,00</Fragment>
-    </Turma>
-  </div>
+  <main class="my-8">
+    <h1 class="text-white text-3xl font-bold">Programação de Cursos</h1>
+    <div class="space-y-4 mt-4">
+      <Turma
+        curso="Interpretação: Ferramentas tradicionais"
+        professor="Profª Josana Camilo"
+      >
+        <p>
+          <ul class="list-disc ml-4">
+            <li>o papel das partes árabes na interpretação</li>
+            <li>
+              termos planetários e decanatos acrescentando mais objetividade nas
+              leituras
+            </li>
+            <li>
+              as triplicidades mostrando, de acordo com as fases da vida, o
+              desdobramento das promessas do mapa natal
+            </li>
+            <li>
+              a interpretação do mapa solar (mesmo para quem não tem horário de
+              nascimento)
+            </li>
+          </ul>
+        </p>
+        <Fragment slot="breve-descricao"
+          >Uso de ferramentas antigas da Astrologia em interpretação de mapas e
+          de previsões</Fragment
+        >
+        <Fragment slot="duracao">1 mês - 4 aulas</Fragment>
+        <Fragment slot="inicio">08 Fevereiro (quintas)</Fragment>
+        <Fragment slot="horario">15h00 às 17h00</Fragment>
+        <Fragment slot="valor">R$ 341,00</Fragment>
+      </Turma>
+      <Turma
+        curso="Interpretação: Ferramentas tradicionais"
+        professor="Profª Josana Camilo"
+      >
+        <p>
+          <ul class="list-disc ml-4">
+            <li>o papel das partes árabes na interpretação</li>
+            <li>
+              termos planetários e decanatos acrescentando mais objetividade nas
+              leituras
+            </li>
+            <li>
+              as triplicidades mostrando, de acordo com as fases da vida, o
+              desdobramento das promessas do mapa natal
+            </li>
+            <li>
+              a interpretação do mapa solar (mesmo para quem não tem horário de
+              nascimento)
+            </li>
+          </ul>
+        </p>
+        <Fragment slot="breve-descricao"
+          >Uso de ferramentas antigas da Astrologia em interpretação de mapas e
+          de previsões</Fragment
+        >
+        <Fragment slot="duracao">1 mês - 4 aulas</Fragment>
+        <Fragment slot="inicio">08 Fevereiro (quintas)</Fragment>
+        <Fragment slot="horario">15h00 às 17h00</Fragment>
+        <Fragment slot="valor">R$ 341,00</Fragment>
+      </Turma>
+    </div>
+  </main>
 </Layout>
