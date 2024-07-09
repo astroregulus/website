@@ -1,5 +1,7 @@
 ---
 import Link from "./Link.astro";
+import logo from "../../public/logo_junta_branca.png";
+import Image from "astro/components/Image.astro";
 
 interface Props {
   title: string;
@@ -12,10 +14,13 @@ const { href, title, body } = Astro.props;
 
 <li class="link-card">
   <Link href={href}>
-    <h2>
-      {title}
-      <span>&rarr;</span>
-    </h2>
+    <div class="flex space-x-2 justify-between">
+      <h2>
+        {title}
+        <span>&rarr;</span>
+      </h2>
+      <Image src={logo} alt="logo" class="h-6 w-6" />
+    </div>
     <p>
       {body}
     </p>
@@ -49,6 +54,7 @@ const { href, title, body } = Astro.props;
     margin: 0;
     font-size: 1.25rem;
     transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    font-weight: bold;
   }
   p {
     margin-top: 0.5rem;

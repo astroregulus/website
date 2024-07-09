@@ -12,37 +12,40 @@ import Parceiro from "../components/Parceiro.astro";
 <Layout title="Regulus | Escola de Astrologia">
   <main>
     <!-- <h1>Estude Astrologia <span class="text-gradient">de verdade</span></h1> -->
-    <h1>
-      Formando astrólogos <span class="text-gradient"> desde 1975</span>
-    </h1>
-    <p class="instructions">
-      <!-- Ensinando e formando astrólogos desde 1975.<br /> -->
-      <strong>Formação completa em Astrologia:</strong> cursos básicos, intermediários
-      e avançados.
-    </p>
+    <div class="max-w-screen-md mx-auto">
+      <h1>
+        Formando Astrólogos <span class="text-gradient"> desde 1975</span>
+      </h1>
+      <p class="instructions">
+        <!-- Ensinando e formando astrólogos desde 1975.<br /> -->
+        <strong>Formação completa em Astrologia:</strong> cursos básicos, intermediários
+        e avançados.
+      </p>
+      <div
+        class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8 mb-16 sm:space-x-3"
+      >
+        <button class="w-full md:w-max primary">
+          <Link href="/turmas">Veja as turmas</Link></button
+        >
+        <button class="w-full md:w-max primary"
+          ><Link href="/formacao">Grade curricular</Link></button
+        >
+      </div>
+    </div>
     <!-- <div
       style="display:flex;justify-content:center;margin-left:auto;margin-right:auto;margin-bottom:4rem;"
     > -->
-    <div
-      class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8 mb-16 sm:space-x-3"
-    >
-      <button class="w-full md:w-max primary">
-        <Link href="/turmas">Veja as turmas</Link></button
-      >
-      <button class="w-full md:w-max primary"
-        ><Link href="/formacao">Grade curricular</Link></button
-      >
-    </div>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://www.livrariadaregulus.com.br/"
-        title="Livraria"
-        body="Um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros."
-      />
+
+    <ul role="list" class="link-card-grid grid-cols-1 sm:grid-cols-2">
       <Card
         href="/formacao"
         title="Formação"
         body="Nossa grade curricular atende a CBO (Classificação Brasileira de Ocupações) e os currículos de referência de entidades nacionais e internacionais."
+      />
+      <Card
+        href="https://www.youtube.com/user/astrologiaregulus"
+        title="Encontro Regulus de Astrologia"
+        body="Acesse nosso canal no YouTube e tenha acesso a vários conteúdos gratuitos"
       />
       <Card
         href="/turmas"
@@ -50,13 +53,13 @@ import Parceiro from "../components/Parceiro.astro";
         body="Veja nossas turmas abertas"
       />
       <Card
-        href="https://www.youtube.com/user/astrologiaregulus"
-        title="Encontro Regulus de Astrologia"
-        body="Acesse nosso canal no YouTube e tenha acesso a vários conteúdos gratuitos"
+        href="https://www.livrariadaregulus.com.br/"
+        title="Livraria"
+        body="Um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros."
       />
     </ul>
     <div>
-      <p class="my-8">A escola Regulus é parceira e apoia:</p>
+      <p class="my-8 text-center">A escola Regulus é parceira e apoia:</p>
       <div
         class="flex flex-wrap items-center justify-center gap-12 px-8 sm:gap-16"
       >
@@ -90,7 +93,7 @@ import Parceiro from "../components/Parceiro.astro";
   main {
     margin: auto;
     padding: 2rem;
-    width: 800px;
+    width: 1024px;
     max-width: calc(100% - 2rem);
     color: white;
     font-size: 20px;
@@ -112,6 +115,9 @@ import Parceiro from "../components/Parceiro.astro";
     text-align: center;
     margin: 0;
     /* margin-bottom: 1em; */
+  }
+  h1 > span {
+    font-size: 3.5rem;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
@@ -145,7 +151,7 @@ import Parceiro from "../components/Parceiro.astro";
   }
   .link-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    /* grid-template-columns: minmax(24ch, 1fr) minmax(24ch, 1fr); */
     gap: 2rem;
     padding: 0;
   }
